@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/ConnectPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the Socket and IP provided by the server." />
+        <EditText 
+        android:id="@+id/SocketEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="3526"
+        android:hint="Server Socket"/>
+    
+        <EditText 
+        android:id="@+id/IPEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="10.25.71.214"
+        android:hint="Server IP"/>
+        
+    <Button
+        android:id="@+id/LinkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startLink"
+        android:text="Connect" >
+    </Button>
+</LinearLayout>

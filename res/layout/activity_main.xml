@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/ConnectedPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type in your message to the server" />
+
+    <EditText
+        android:id="@+id/Message2Send"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter message here" >
+    </EditText>
+
+    <Button
+        android:id="@+id/SendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="SendMessage"
+        android:text="Send" >
+    </Button>
+
+    <TextView
+        android:id="@+id/FileText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="No file chosen">
+    </TextView>
+
+    <Button 
+        android:id="@+id/FileButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose File"
+        android:onClick="PickPic">
+    </Button>
+
+</LinearLayout>
